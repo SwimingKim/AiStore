@@ -10,13 +10,7 @@
 			"name": "register_store",
 			"request": {
 				"method": "POST",
-				"header": [
-					{
-						"key": "id",
-						"value": "adas",
-						"type": "text"
-					}
-				],
+				"header": [],
 				"body": {
 					"mode": "formdata",
 					"formdata": [
@@ -44,13 +38,6 @@
 					],
 					"path": [
 						"register"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "hello",
-							"disabled": true
-						}
 					]
 				}
 			},

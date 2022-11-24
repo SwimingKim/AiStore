@@ -5,13 +5,6 @@
 >```
 >{{BASE_URL}}/register
 >```
-### Headers
-
-|Content-Type|Value|
-|---|---|
-|id|adas|
-
-
 ### Body formdata
 
 |Param|value|Type|
@@ -19,13 +12,6 @@
 |s_id|s4|text|
 |name|cu|text|
 |locate|seoul|text|
-
-
-### Query Params
-
-|Param|value|
-|---|---|
-|id|hello|
 
 
 
