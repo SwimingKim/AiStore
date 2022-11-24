@@ -43,7 +43,7 @@
 			},
 			"response": [
 				{
-					"name": "register_store",
+					"name": "success",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -114,7 +114,7 @@
 					"body": "{\"result\": true}"
 				},
 				{
-					"name": "register_store",
+					"name": "fail",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -139,17 +139,11 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:9999/api/register",
-							"protocol": "http",
+							"raw": "{{BASE_URL}}/register",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{BASE_URL}}"
 							],
-							"port": "9999",
 							"path": [
-								"api",
 								"register"
 							]
 						}
@@ -216,22 +210,16 @@
 			},
 			"response": [
 				{
-					"name": "show_store",
+					"name": "success",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:9999/api/store/:id",
-							"protocol": "http",
+							"raw": "{{BASE_URL}}/store/:id",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{BASE_URL}}"
 							],
-							"port": "9999",
 							"path": [
-								"api",
 								"store",
 								":id"
 							],
@@ -245,7 +233,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": "html",
+					"_postman_previewlanguage": "json",
 					"header": [
 						{
 							"key": "Server",
@@ -257,7 +245,10 @@
 						},
 						{
 							"key": "Content-Type",
-							"value": "text/html; charset=utf-8"
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
 						},
 						{
 							"key": "Content-Length",
@@ -277,7 +268,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\"data\": [{\"s_id\": \"s1\", \"name\": \"\\uc6a9\\uc0b0\\uc810\", \"locate\": \"\\uc6a9\\uc0b0\", \"products_num\": 6}], \"result\": true}"
+					"body": "{\n    \"data\": [\n        {\n            \"s_id\": \"s1\",\n            \"name\": \"용산점\",\n            \"locate\": \"용산\",\n            \"products_num\": 6\n        }\n    ],\n    \"result\": true\n}"
 				}
 			]
 		},
@@ -298,22 +289,16 @@
 			},
 			"response": [
 				{
-					"name": "show_stores",
+					"name": "success",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:9999/api/stores",
-							"protocol": "http",
+							"raw": "{{BASE_URL}}/stores",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{BASE_URL}}"
 							],
-							"port": "9999",
 							"path": [
-								"api",
 								"stores"
 							]
 						}
@@ -400,7 +385,7 @@
 			},
 			"response": [
 				{
-					"name": "manage_store",
+					"name": "success",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -425,17 +410,11 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:9999/api/manage/:id",
-							"protocol": "http",
+							"raw": "{{BASE_URL}}/manage/:id",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{BASE_URL}}"
 							],
-							"port": "9999",
 							"path": [
-								"api",
 								"manage",
 								":id"
 							],
@@ -515,7 +494,7 @@
 			},
 			"response": [
 				{
-					"name": "get_menu",
+					"name": "success",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -530,17 +509,11 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:9999/api/menu",
-							"protocol": "http",
+							"raw": "{{BASE_URL}}/menu",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{BASE_URL}}"
 							],
-							"port": "9999",
 							"path": [
-								"api",
 								"menu"
 							]
 						}
@@ -600,22 +573,16 @@
 			},
 			"response": [
 				{
-					"name": "get_products_list",
+					"name": "success",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:9999/api/products",
-							"protocol": "http",
+							"raw": "{{BASE_URL}}/products",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{BASE_URL}}"
 							],
-							"port": "9999",
 							"path": [
-								"api",
 								"products"
 							]
 						}
@@ -695,7 +662,7 @@
 			},
 			"response": [
 				{
-					"name": "buy_product",
+					"name": "success",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -720,17 +687,11 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:9999/api/buy",
-							"protocol": "http",
+							"raw": "{{BASE_URL}}/buy",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{BASE_URL}}"
 							],
-							"port": "9999",
 							"path": [
-								"api",
 								"buy"
 							]
 						}
