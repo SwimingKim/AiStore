@@ -26,9 +26,18 @@ def result_success(obj = None):
         data = json.dumps({"data": obj, "result": True})
     return Response(data, status=200)
 
+def result_error(message=None):
+    data = json.dumps({"result": False})
+    if message != None:
+        data = json.dumps({"data": message, "result": False})
+    return Response(data, status=400)
+
 @app.route("/api/register", methods=["POST"])
 def register_store():
     s_id = request.form["s_id"]
+    is_exist = exist_store(s_id)
+    if is_exist:
+        return result_error("already exist")
     name = request.form["name"]
     locate = request.form["locate"]
     create_store(s_id=s_id, s_name=name, locate=locate)
@@ -36,20 +45,23 @@ def register_store():
 
 @app.route("/api/store/<id>", methods=["GET"])
 def show_store(id = None):
-    data = result_success(show_list(id))
-    return result_success(data)
+    return result_success(show_list(id))
 
 @app.route("/api/stores", methods=["GET"])
 def show_stores():
-    data = result_success(show_list())
-    return result_success(data)
+    return result_success(show_list())
    
 @app.route("/api/manage/<id>", methods=["POST"])
-def manage_stores():
+def manage_store(id = None):
+    print("ID", id)
     ai_store = search_store(id)
+    print(ai_store)
     p_id = request.form["p_id"]
     price = request.form["price"]
     count = request.form["count"]
+    if not exist_product(p_id):
+        return result_error("no product")
+
     set_product(ai_store, p_id, int(price), int(count))
     update(ai_store)
     return result_success()
@@ -62,14 +74,19 @@ def get_menu():
 
 @app.route("/api/products", methods=["GET"])
 def get_products_list():
-    data = result_success(get_products())
-    return result_success(data)
+    return result_success(get_products())
 
 @app.route("/api/buy", methods=["POST"])
 def buy_product():
     s_id = request.form["s_id"]
     p_id = request.form["p_id"]
     count = request.form["count"]
+
+    if not exist_store(s_id):
+        return result_error("no store")
+    if not exist_product(p_id):
+        return result_error("no product")
+
     store = search_store(s_id)
     store.buy_product(p_id, int(count))
     update(store)

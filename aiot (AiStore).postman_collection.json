@@ -1,0 +1,256 @@
+{
+	"info": {
+		"_postman_id": "67f681ce-6821-43ad-80d8-c654445b2422",
+		"name": "aiot (AiStore)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2105749"
+	},
+	"item": [
+		{
+			"name": "register_store",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "id",
+						"value": "adas",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "s_id",
+							"value": "s4",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "cu",
+							"type": "text"
+						},
+						{
+							"key": "locate",
+							"value": "seoul",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/register",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"register"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "hello",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show_store",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/store/:id",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"store",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "s1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show_stores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/stores",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"stores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "manage_store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "p_id",
+							"value": "p8",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "1500",
+							"type": "text"
+						},
+						{
+							"key": "count",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/manage/:id",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"manage",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "s1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_menu",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "s_id",
+							"value": "s1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/menu",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"menu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_products_list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/products",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buy_product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "s_id",
+							"value": "s1",
+							"type": "text"
+						},
+						{
+							"key": "p_id",
+							"value": "p1",
+							"type": "text"
+						},
+						{
+							"key": "count",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/buy",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"buy"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "http://127.0.0.1:9999/api",
+			"type": "string"
+		}
+	]
+}

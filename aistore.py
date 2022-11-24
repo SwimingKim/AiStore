@@ -79,6 +79,11 @@ class AiStore:
         return {'p_name': p_name, 'price': int(price), 'count': int(count), 'p_id':p_id}
 
 
+def exist_store(s_id):
+    return s_id in s_df[["s_id"]].values
+
+def exist_product(p_id):
+    return p_id in p_df[["p_id"]].values
 
 def create_store(s_id, s_name, locate):
 
