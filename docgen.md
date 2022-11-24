@@ -119,6 +119,7 @@ URL: {{BASE_URL}}/products
 #### I. Example Response: success
 ```js
 {
+    "result": true,
     "data": [
         {
             "p_id": "p1",
@@ -155,8 +156,7 @@ URL: {{BASE_URL}}/products
             "product": "초콜릿",
             "reco_price": 1500
         }
-    ],
-    "result": true
+    ]
 }
 ```
 
@@ -207,11 +207,12 @@ URL: {{BASE_URL}}/menu
 #### I. Example Response: success
 ```js
 {
+    "result": true,
     "data": [
         {
             "p_name": "커피",
             "price": 2000,
-            "count": 46,
+            "count": 50,
             "p_id": "p1"
         },
         {
@@ -244,8 +245,7 @@ URL: {{BASE_URL}}/menu
             "count": 10,
             "p_id": "p6"
         }
-    ],
-    "result": true
+    ]
 }
 ```
 
@@ -354,29 +354,7 @@ URL: {{BASE_URL}}/stores
 
 #### I. Example Response: success
 ```js
-{
-    "data": [
-        {
-            "s_id": "s1",
-            "name": "용산점",
-            "locate": "용산",
-            "products_num": 6
-        },
-        {
-            "s_id": "s2",
-            "name": "강남점",
-            "locate": "강남",
-            "products_num": 3
-        },
-        {
-            "s_id": "s3",
-            "name": "강북점",
-            "locate": "강북",
-            "products_num": 4
-        }
-    ],
-    "result": true
-}
+{"result": true, "data": [{"s_id": "s1", "name": "\uc6a9\uc0b0\uc810", "locate": "\uc6a9\uc0b0", "products_num": 6}, {"s_id": "s2", "name": "\uac15\ub0a8\uc810", "locate": "\uac15\ub0a8", "products_num": 3}, {"s_id": "s3", "name": "\uac15\ubd81\uc810", "locate": "\uac15\ubd81", "products_num": 4}, {"s_id": "s4", "name": "cu", "locate": "seoul", "products_num": 0}]}
 ```
 
 
@@ -430,6 +408,7 @@ URL: {{BASE_URL}}/store/:id
 #### I. Example Response: success
 ```js
 {
+    "result": true,
     "data": [
         {
             "s_id": "s1",
@@ -437,8 +416,7 @@ URL: {{BASE_URL}}/store/:id
             "locate": "용산",
             "products_num": 6
         }
-    ],
-    "result": true
+    ]
 }
 ```
 
@@ -521,8 +499,8 @@ URL: {{BASE_URL}}/register
 #### II. Example Response: fail
 ```js
 {
-    "data": "already exist",
-    "result": false
+    "result": false,
+    "data": "already exist"
 }
 ```
 
@@ -536,4 +514,4 @@ URL: {{BASE_URL}}/register
 ---
 [Back to top](#aiot-aistore)
 
->Generated at 2022-11-24 17:03:44 by [docgen](https://github.com/thedevsaddam/docgen)
+>Generated at 2022-11-24 17:08:31 by [docgen](https://github.com/thedevsaddam/docgen)

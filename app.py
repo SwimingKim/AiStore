@@ -23,13 +23,13 @@ def index():
 def result_success(obj = None):
     data = json.dumps({"result": True})
     if obj != None:
-        data = json.dumps({"data": obj, "result": True})
+        data = json.dumps({"result": True, "data": obj})
     return Response(data, status=200)
 
 def result_error(message=None):
     data = json.dumps({"result": False})
     if message != None:
-        data = json.dumps({"data": message, "result": False})
+        data = json.dumps({"result": False, "data": message})
     return Response(data, status=400)
 
 @app.route("/api/register", methods=["POST"])

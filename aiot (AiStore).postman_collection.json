@@ -161,7 +161,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Thu, 24 Nov 2022 05:49:38 GMT"
+							"value": "Thu, 24 Nov 2022 08:05:49 GMT"
 						},
 						{
 							"key": "Content-Type",
@@ -180,7 +180,7 @@
 						},
 						{
 							"key": "Set-Cookie",
-							"value": "session=eyJfcGVybWFuZW50Ijp0cnVlfQ.Y38F8g.1LFzZduAJhJ9RIJ-mr5XUuC18e0; Expires=Thu, 24 Nov 2022 05:54:38 GMT; HttpOnly; Path=/"
+							"value": "session=eyJfcGVybWFuZW50Ijp0cnVlfQ.Y38l3Q.gbF30l1R9BOYzXRg6RwDbHAk1Kw; Expires=Thu, 24 Nov 2022 08:10:49 GMT; HttpOnly; Path=/"
 						},
 						{
 							"key": "Connection",
@@ -188,7 +188,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"data\": \"already exist\",\n    \"result\": false\n}"
+					"body": "{\n    \"result\": false,\n    \"data\": \"already exist\"\n}"
 				}
 			]
 		},
@@ -247,7 +247,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Thu, 24 Nov 2022 06:44:15 GMT"
+							"value": "Thu, 24 Nov 2022 08:06:15 GMT"
 						},
 						{
 							"key": "Content-Type",
@@ -266,7 +266,7 @@
 						},
 						{
 							"key": "Set-Cookie",
-							"value": "session=eyJfcGVybWFuZW50Ijp0cnVlfQ.Y38Svw.vIutksh58JZClT_Gu-x2WNSXMJc; Expires=Thu, 24 Nov 2022 06:49:15 GMT; HttpOnly; Path=/"
+							"value": "session=eyJfcGVybWFuZW50Ijp0cnVlfQ.Y38l9w.TJTJvbH30vx-6psVGGSVTgTasAk; Expires=Thu, 24 Nov 2022 08:11:15 GMT; HttpOnly; Path=/"
 						},
 						{
 							"key": "Connection",
@@ -274,7 +274,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"data\": [\n        {\n            \"s_id\": \"s1\",\n            \"name\": \"용산점\",\n            \"locate\": \"용산\",\n            \"products_num\": 6\n        }\n    ],\n    \"result\": true\n}"
+					"body": "{\n    \"result\": true,\n    \"data\": [\n        {\n            \"s_id\": \"s1\",\n            \"name\": \"용산점\",\n            \"locate\": \"용산\",\n            \"products_num\": 6\n        }\n    ]\n}"
 				}
 			]
 		},
@@ -311,7 +311,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": "json",
+					"_postman_previewlanguage": "html",
 					"header": [
 						{
 							"key": "Server",
@@ -319,18 +319,15 @@
 						},
 						{
 							"key": "Date",
-							"value": "Thu, 24 Nov 2022 05:52:53 GMT"
+							"value": "Thu, 24 Nov 2022 08:06:44 GMT"
 						},
 						{
 							"key": "Content-Type",
-							"value": "application/json",
-							"name": "Content-Type",
-							"description": "",
-							"type": "text"
+							"value": "text/html; charset=utf-8"
 						},
 						{
 							"key": "Content-Length",
-							"value": "299"
+							"value": "367"
 						},
 						{
 							"key": "Vary",
@@ -338,7 +335,7 @@
 						},
 						{
 							"key": "Set-Cookie",
-							"value": "session=eyJfcGVybWFuZW50Ijp0cnVlfQ.Y38GtQ.G8ZNM2xnpDCyoJ7kEnmWWDkjSbE; Expires=Thu, 24 Nov 2022 05:57:53 GMT; HttpOnly; Path=/"
+							"value": "session=eyJfcGVybWFuZW50Ijp0cnVlfQ.Y38mFA.HiQDHtKYWLHrvXqzYZgw1jS-AoM; Expires=Thu, 24 Nov 2022 08:11:44 GMT; HttpOnly; Path=/"
 						},
 						{
 							"key": "Connection",
@@ -346,7 +343,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"data\": [\n        {\n            \"s_id\": \"s1\",\n            \"name\": \"용산점\",\n            \"locate\": \"용산\",\n            \"products_num\": 6\n        },\n        {\n            \"s_id\": \"s2\",\n            \"name\": \"강남점\",\n            \"locate\": \"강남\",\n            \"products_num\": 3\n        },\n        {\n            \"s_id\": \"s3\",\n            \"name\": \"강북점\",\n            \"locate\": \"강북\",\n            \"products_num\": 4\n        }\n    ],\n    \"result\": true\n}"
+					"body": "{\"result\": true, \"data\": [{\"s_id\": \"s1\", \"name\": \"\\uc6a9\\uc0b0\\uc810\", \"locate\": \"\\uc6a9\\uc0b0\", \"products_num\": 6}, {\"s_id\": \"s2\", \"name\": \"\\uac15\\ub0a8\\uc810\", \"locate\": \"\\uac15\\ub0a8\", \"products_num\": 3}, {\"s_id\": \"s3\", \"name\": \"\\uac15\\ubd81\\uc810\", \"locate\": \"\\uac15\\ubd81\", \"products_num\": 4}, {\"s_id\": \"s4\", \"name\": \"cu\", \"locate\": \"seoul\", \"products_num\": 0}]}"
 				}
 			]
 		},
@@ -540,7 +537,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Thu, 24 Nov 2022 06:51:53 GMT"
+							"value": "Thu, 24 Nov 2022 08:07:06 GMT"
 						},
 						{
 							"key": "Content-Type",
@@ -559,7 +556,7 @@
 						},
 						{
 							"key": "Set-Cookie",
-							"value": "session=eyJfcGVybWFuZW50Ijp0cnVlfQ.Y38UiQ.JRPMCPm-WszQ2sE6OwTn-GT_bOw; Expires=Thu, 24 Nov 2022 06:56:53 GMT; HttpOnly; Path=/"
+							"value": "session=eyJfcGVybWFuZW50Ijp0cnVlfQ.Y38mKg.oAkYP2t3DHmdaFSM5qqm8ZKs2jE; Expires=Thu, 24 Nov 2022 08:12:06 GMT; HttpOnly; Path=/"
 						},
 						{
 							"key": "Connection",
@@ -567,7 +564,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"data\": [\n        {\n            \"p_name\": \"커피\",\n            \"price\": 2000,\n            \"count\": 46,\n            \"p_id\": \"p1\"\n        },\n        {\n            \"p_name\": \"쿠키\",\n            \"price\": 1000,\n            \"count\": 30,\n            \"p_id\": \"p2\"\n        },\n        {\n            \"p_name\": \"아이스크림\",\n            \"price\": 1500,\n            \"count\": 30,\n            \"p_id\": \"p3\"\n        },\n        {\n            \"p_name\": \"에이드\",\n            \"price\": 3000,\n            \"count\": 20,\n            \"p_id\": \"p4\"\n        },\n        {\n            \"p_name\": \"와플\",\n            \"price\": 4000,\n            \"count\": 10,\n            \"p_id\": \"p5\"\n        },\n        {\n            \"p_name\": \"과일주스\",\n            \"price\": 3000,\n            \"count\": 10,\n            \"p_id\": \"p6\"\n        }\n    ],\n    \"result\": true\n}"
+					"body": "{\n    \"result\": true,\n    \"data\": [\n        {\n            \"p_name\": \"커피\",\n            \"price\": 2000,\n            \"count\": 50,\n            \"p_id\": \"p1\"\n        },\n        {\n            \"p_name\": \"쿠키\",\n            \"price\": 1000,\n            \"count\": 30,\n            \"p_id\": \"p2\"\n        },\n        {\n            \"p_name\": \"아이스크림\",\n            \"price\": 1500,\n            \"count\": 30,\n            \"p_id\": \"p3\"\n        },\n        {\n            \"p_name\": \"에이드\",\n            \"price\": 3000,\n            \"count\": 20,\n            \"p_id\": \"p4\"\n        },\n        {\n            \"p_name\": \"와플\",\n            \"price\": 4000,\n            \"count\": 10,\n            \"p_id\": \"p5\"\n        },\n        {\n            \"p_name\": \"과일주스\",\n            \"price\": 3000,\n            \"count\": 10,\n            \"p_id\": \"p6\"\n        }\n    ]\n}"
 				}
 			]
 		},
@@ -612,7 +609,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Thu, 24 Nov 2022 06:48:51 GMT"
+							"value": "Thu, 24 Nov 2022 08:07:24 GMT"
 						},
 						{
 							"key": "Content-Type",
@@ -631,7 +628,7 @@
 						},
 						{
 							"key": "Set-Cookie",
-							"value": "session=eyJfcGVybWFuZW50Ijp0cnVlfQ.Y38T0w.8SHw0_9T0hvbIIdBh56Re9sOpRA; Expires=Thu, 24 Nov 2022 06:53:51 GMT; HttpOnly; Path=/"
+							"value": "session=eyJfcGVybWFuZW50Ijp0cnVlfQ.Y38mPA._0RlxbtPopanzyRUzBrgOZXaUNo; Expires=Thu, 24 Nov 2022 08:12:24 GMT; HttpOnly; Path=/"
 						},
 						{
 							"key": "Connection",
@@ -639,7 +636,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"data\": [\n        {\n            \"p_id\": \"p1\",\n            \"product\": \"커피\",\n            \"reco_price\": 1500\n        },\n        {\n            \"p_id\": \"p2\",\n            \"product\": \"쿠키\",\n            \"reco_price\": 2000\n        },\n        {\n            \"p_id\": \"p3\",\n            \"product\": \"아이스크림\",\n            \"reco_price\": 1500\n        },\n        {\n            \"p_id\": \"p4\",\n            \"product\": \"에이드\",\n            \"reco_price\": 3000\n        },\n        {\n            \"p_id\": \"p5\",\n            \"product\": \"와플\",\n            \"reco_price\": 4000\n        },\n        {\n            \"p_id\": \"p6\",\n            \"product\": \"과일주스\",\n            \"reco_price\": 4000\n        },\n        {\n            \"p_id\": \"p7\",\n            \"product\": \"초콜릿\",\n            \"reco_price\": 1500\n        }\n    ],\n    \"result\": true\n}"
+					"body": "{\n    \"result\": true,\n    \"data\": [\n        {\n            \"p_id\": \"p1\",\n            \"product\": \"커피\",\n            \"reco_price\": 1500\n        },\n        {\n            \"p_id\": \"p2\",\n            \"product\": \"쿠키\",\n            \"reco_price\": 2000\n        },\n        {\n            \"p_id\": \"p3\",\n            \"product\": \"아이스크림\",\n            \"reco_price\": 1500\n        },\n        {\n            \"p_id\": \"p4\",\n            \"product\": \"에이드\",\n            \"reco_price\": 3000\n        },\n        {\n            \"p_id\": \"p5\",\n            \"product\": \"와플\",\n            \"reco_price\": 4000\n        },\n        {\n            \"p_id\": \"p6\",\n            \"product\": \"과일주스\",\n            \"reco_price\": 4000\n        },\n        {\n            \"p_id\": \"p7\",\n            \"product\": \"초콜릿\",\n            \"reco_price\": 1500\n        }\n    ]\n}"
 				}
 			]
 		},
