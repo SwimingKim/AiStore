@@ -41,7 +41,156 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "register_store",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "s_id",
+									"value": "s4",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "cu",
+									"type": "text"
+								},
+								{
+									"key": "locate",
+									"value": "seoul",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/register",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 24 Nov 2022 07:12:19 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "16"
+						},
+						{
+							"key": "Vary",
+							"value": "Cookie"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "session=eyJfcGVybWFuZW50Ijp0cnVlfQ.Y38ZUw.ptkf4XelzyGNd892aD2-e_3puJw; Expires=Thu, 24 Nov 2022 07:17:19 GMT; HttpOnly; Path=/"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\"result\": true}"
+				},
+				{
+					"name": "register_store",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "s_id",
+									"value": "s4",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "cu",
+									"type": "text"
+								},
+								{
+									"key": "locate",
+									"value": "seoul",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:9999/api/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "BAD REQUEST",
+					"code": 400,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 24 Nov 2022 05:49:38 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "Vary",
+							"value": "Cookie"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "session=eyJfcGVybWFuZW50Ijp0cnVlfQ.Y38F8g.1LFzZduAJhJ9RIJ-mr5XUuC18e0; Expires=Thu, 24 Nov 2022 05:54:38 GMT; HttpOnly; Path=/"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\"data\": \"already exist\", \"result\": false}"
+				}
+			]
 		},
 		{
 			"name": "show_store",
@@ -65,7 +214,72 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "show_store",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:9999/api/store/:id",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"store",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "s1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 24 Nov 2022 06:44:15 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "117"
+						},
+						{
+							"key": "Vary",
+							"value": "Cookie"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "session=eyJfcGVybWFuZW50Ijp0cnVlfQ.Y38Svw.vIutksh58JZClT_Gu-x2WNSXMJc; Expires=Thu, 24 Nov 2022 06:49:15 GMT; HttpOnly; Path=/"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\"data\": [{\"s_id\": \"s1\", \"name\": \"\\uc6a9\\uc0b0\\uc810\", \"locate\": \"\\uc6a9\\uc0b0\", \"products_num\": 6}], \"result\": true}"
+				}
+			]
 		},
 		{
 			"name": "show_stores",
@@ -82,7 +296,65 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "show_stores",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:9999/api/stores",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"stores"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 24 Nov 2022 05:52:53 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "299"
+						},
+						{
+							"key": "Vary",
+							"value": "Cookie"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "session=eyJfcGVybWFuZW50Ijp0cnVlfQ.Y38GtQ.G8ZNM2xnpDCyoJ7kEnmWWDkjSbE; Expires=Thu, 24 Nov 2022 05:57:53 GMT; HttpOnly; Path=/"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\"data\": [{\"s_id\": \"s1\", \"name\": \"\\uc6a9\\uc0b0\\uc810\", \"locate\": \"\\uc6a9\\uc0b0\", \"products_num\": 6}, {\"s_id\": \"s2\", \"name\": \"\\uac15\\ub0a8\\uc810\", \"locate\": \"\\uac15\\ub0a8\", \"products_num\": 3}, {\"s_id\": \"s3\", \"name\": \"\\uac15\\ubd81\\uc810\", \"locate\": \"\\uac15\\ubd81\", \"products_num\": 4}], \"result\": true}"
+				}
+			]
 		},
 		{
 			"name": "manage_store",
@@ -126,7 +398,92 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "manage_store",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "p_id",
+									"value": "p1",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "1800",
+									"type": "text"
+								},
+								{
+									"key": "count",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:9999/api/manage/:id",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"manage",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "s1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 24 Nov 2022 06:46:10 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "16"
+						},
+						{
+							"key": "Vary",
+							"value": "Cookie"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "session=eyJfcGVybWFuZW50Ijp0cnVlfQ.Y38TMg.bEwk8g9ozIUMf9XDF-0Q7Z3MYkI; Expires=Thu, 24 Nov 2022 06:51:10 GMT; HttpOnly; Path=/"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\"result\": true}"
+				}
+			]
 		},
 		{
 			"name": "get_menu",
@@ -156,7 +513,75 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "get_menu",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "s_id",
+									"value": "s1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:9999/api/menu",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"menu"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 24 Nov 2022 06:51:53 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "482"
+						},
+						{
+							"key": "Vary",
+							"value": "Cookie"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "session=eyJfcGVybWFuZW50Ijp0cnVlfQ.Y38UiQ.JRPMCPm-WszQ2sE6OwTn-GT_bOw; Expires=Thu, 24 Nov 2022 06:56:53 GMT; HttpOnly; Path=/"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\"data\": [{\"p_name\": \"\\ucee4\\ud53c\", \"price\": 2000, \"count\": 46, \"p_id\": \"p1\"}, {\"p_name\": \"\\ucfe0\\ud0a4\", \"price\": 1000, \"count\": 30, \"p_id\": \"p2\"}, {\"p_name\": \"\\uc544\\uc774\\uc2a4\\ud06c\\ub9bc\", \"price\": 1500, \"count\": 30, \"p_id\": \"p3\"}, {\"p_name\": \"\\uc5d0\\uc774\\ub4dc\", \"price\": 3000, \"count\": 20, \"p_id\": \"p4\"}, {\"p_name\": \"\\uc640\\ud50c\", \"price\": 4000, \"count\": 10, \"p_id\": \"p5\"}, {\"p_name\": \"\\uacfc\\uc77c\\uc8fc\\uc2a4\", \"price\": 3000, \"count\": 10, \"p_id\": \"p6\"}], \"result\": true}"
+				}
+			]
 		},
 		{
 			"name": "get_products_list",
@@ -173,7 +598,65 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "get_products_list",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:9999/api/products",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 24 Nov 2022 06:48:51 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "509"
+						},
+						{
+							"key": "Vary",
+							"value": "Cookie"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "session=eyJfcGVybWFuZW50Ijp0cnVlfQ.Y38T0w.8SHw0_9T0hvbIIdBh56Re9sOpRA; Expires=Thu, 24 Nov 2022 06:53:51 GMT; HttpOnly; Path=/"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\"data\": [{\"p_id\": \"p1\", \"product\": \"\\ucee4\\ud53c\", \"reco_price\": 1500}, {\"p_id\": \"p2\", \"product\": \"\\ucfe0\\ud0a4\", \"reco_price\": 2000}, {\"p_id\": \"p3\", \"product\": \"\\uc544\\uc774\\uc2a4\\ud06c\\ub9bc\", \"reco_price\": 1500}, {\"p_id\": \"p4\", \"product\": \"\\uc5d0\\uc774\\ub4dc\", \"reco_price\": 3000}, {\"p_id\": \"p5\", \"product\": \"\\uc640\\ud50c\", \"reco_price\": 4000}, {\"p_id\": \"p6\", \"product\": \"\\uacfc\\uc77c\\uc8fc\\uc2a4\", \"reco_price\": 4000}, {\"p_id\": \"p7\", \"product\": \"\\ucd08\\ucf5c\\ub9bf\", \"reco_price\": 1500}], \"result\": true}"
+				}
+			]
 		},
 		{
 			"name": "buy_product",
@@ -210,7 +693,85 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "buy_product",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "s_id",
+									"value": "s1",
+									"type": "text"
+								},
+								{
+									"key": "p_id",
+									"value": "p1",
+									"type": "text"
+								},
+								{
+									"key": "count",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:9999/api/buy",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"buy"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 24 Nov 2022 06:51:50 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "16"
+						},
+						{
+							"key": "Vary",
+							"value": "Cookie"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "session=eyJfcGVybWFuZW50Ijp0cnVlfQ.Y38Uhg.vXzkRyK5pRIvgzrR7bTMxEFAPfc; Expires=Thu, 24 Nov 2022 06:56:50 GMT; HttpOnly; Path=/"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\"result\": true}"
+				}
+			]
 		}
 	],
 	"event": [
