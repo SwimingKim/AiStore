@@ -79,7 +79,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": "html",
+					"_postman_previewlanguage": "json",
 					"header": [
 						{
 							"key": "Server",
@@ -91,7 +91,10 @@
 						},
 						{
 							"key": "Content-Type",
-							"value": "text/html; charset=utf-8"
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
 						},
 						{
 							"key": "Content-Length",
@@ -111,7 +114,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\"result\": true}"
+					"body": "{\n    \"result\": true\n}"
 				},
 				{
 					"name": "fail",
@@ -150,7 +153,7 @@
 					},
 					"status": "BAD REQUEST",
 					"code": 400,
-					"_postman_previewlanguage": "html",
+					"_postman_previewlanguage": "json",
 					"header": [
 						{
 							"key": "Server",
@@ -162,7 +165,10 @@
 						},
 						{
 							"key": "Content-Type",
-							"value": "text/html; charset=utf-8"
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
 						},
 						{
 							"key": "Content-Length",
@@ -182,7 +188,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\"data\": \"already exist\", \"result\": false}"
+					"body": "{\n    \"data\": \"already exist\",\n    \"result\": false\n}"
 				}
 			]
 		},
@@ -305,7 +311,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": "html",
+					"_postman_previewlanguage": "json",
 					"header": [
 						{
 							"key": "Server",
@@ -317,7 +323,10 @@
 						},
 						{
 							"key": "Content-Type",
-							"value": "text/html; charset=utf-8"
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
 						},
 						{
 							"key": "Content-Length",
@@ -337,7 +346,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\"data\": [{\"s_id\": \"s1\", \"name\": \"\\uc6a9\\uc0b0\\uc810\", \"locate\": \"\\uc6a9\\uc0b0\", \"products_num\": 6}, {\"s_id\": \"s2\", \"name\": \"\\uac15\\ub0a8\\uc810\", \"locate\": \"\\uac15\\ub0a8\", \"products_num\": 3}, {\"s_id\": \"s3\", \"name\": \"\\uac15\\ubd81\\uc810\", \"locate\": \"\\uac15\\ubd81\", \"products_num\": 4}], \"result\": true}"
+					"body": "{\n    \"data\": [\n        {\n            \"s_id\": \"s1\",\n            \"name\": \"용산점\",\n            \"locate\": \"용산\",\n            \"products_num\": 6\n        },\n        {\n            \"s_id\": \"s2\",\n            \"name\": \"강남점\",\n            \"locate\": \"강남\",\n            \"products_num\": 3\n        },\n        {\n            \"s_id\": \"s3\",\n            \"name\": \"강북점\",\n            \"locate\": \"강북\",\n            \"products_num\": 4\n        }\n    ],\n    \"result\": true\n}"
 				}
 			]
 		},
@@ -428,7 +437,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": "html",
+					"_postman_previewlanguage": "json",
 					"header": [
 						{
 							"key": "Server",
@@ -440,7 +449,10 @@
 						},
 						{
 							"key": "Content-Type",
-							"value": "text/html; charset=utf-8"
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
 						},
 						{
 							"key": "Content-Length",
@@ -460,7 +472,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\"result\": true}"
+					"body": "{\n    \"result\": true\n}"
 				}
 			]
 		},
@@ -520,7 +532,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": "html",
+					"_postman_previewlanguage": "json",
 					"header": [
 						{
 							"key": "Server",
@@ -532,7 +544,10 @@
 						},
 						{
 							"key": "Content-Type",
-							"value": "text/html; charset=utf-8"
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
 						},
 						{
 							"key": "Content-Length",
@@ -552,7 +567,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\"data\": [{\"p_name\": \"\\ucee4\\ud53c\", \"price\": 2000, \"count\": 46, \"p_id\": \"p1\"}, {\"p_name\": \"\\ucfe0\\ud0a4\", \"price\": 1000, \"count\": 30, \"p_id\": \"p2\"}, {\"p_name\": \"\\uc544\\uc774\\uc2a4\\ud06c\\ub9bc\", \"price\": 1500, \"count\": 30, \"p_id\": \"p3\"}, {\"p_name\": \"\\uc5d0\\uc774\\ub4dc\", \"price\": 3000, \"count\": 20, \"p_id\": \"p4\"}, {\"p_name\": \"\\uc640\\ud50c\", \"price\": 4000, \"count\": 10, \"p_id\": \"p5\"}, {\"p_name\": \"\\uacfc\\uc77c\\uc8fc\\uc2a4\", \"price\": 3000, \"count\": 10, \"p_id\": \"p6\"}], \"result\": true}"
+					"body": "{\n    \"data\": [\n        {\n            \"p_name\": \"커피\",\n            \"price\": 2000,\n            \"count\": 46,\n            \"p_id\": \"p1\"\n        },\n        {\n            \"p_name\": \"쿠키\",\n            \"price\": 1000,\n            \"count\": 30,\n            \"p_id\": \"p2\"\n        },\n        {\n            \"p_name\": \"아이스크림\",\n            \"price\": 1500,\n            \"count\": 30,\n            \"p_id\": \"p3\"\n        },\n        {\n            \"p_name\": \"에이드\",\n            \"price\": 3000,\n            \"count\": 20,\n            \"p_id\": \"p4\"\n        },\n        {\n            \"p_name\": \"와플\",\n            \"price\": 4000,\n            \"count\": 10,\n            \"p_id\": \"p5\"\n        },\n        {\n            \"p_name\": \"과일주스\",\n            \"price\": 3000,\n            \"count\": 10,\n            \"p_id\": \"p6\"\n        }\n    ],\n    \"result\": true\n}"
 				}
 			]
 		},
@@ -589,7 +604,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": "html",
+					"_postman_previewlanguage": "json",
 					"header": [
 						{
 							"key": "Server",
@@ -601,7 +616,10 @@
 						},
 						{
 							"key": "Content-Type",
-							"value": "text/html; charset=utf-8"
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
 						},
 						{
 							"key": "Content-Length",
@@ -621,7 +639,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\"data\": [{\"p_id\": \"p1\", \"product\": \"\\ucee4\\ud53c\", \"reco_price\": 1500}, {\"p_id\": \"p2\", \"product\": \"\\ucfe0\\ud0a4\", \"reco_price\": 2000}, {\"p_id\": \"p3\", \"product\": \"\\uc544\\uc774\\uc2a4\\ud06c\\ub9bc\", \"reco_price\": 1500}, {\"p_id\": \"p4\", \"product\": \"\\uc5d0\\uc774\\ub4dc\", \"reco_price\": 3000}, {\"p_id\": \"p5\", \"product\": \"\\uc640\\ud50c\", \"reco_price\": 4000}, {\"p_id\": \"p6\", \"product\": \"\\uacfc\\uc77c\\uc8fc\\uc2a4\", \"reco_price\": 4000}, {\"p_id\": \"p7\", \"product\": \"\\ucd08\\ucf5c\\ub9bf\", \"reco_price\": 1500}], \"result\": true}"
+					"body": "{\n    \"data\": [\n        {\n            \"p_id\": \"p1\",\n            \"product\": \"커피\",\n            \"reco_price\": 1500\n        },\n        {\n            \"p_id\": \"p2\",\n            \"product\": \"쿠키\",\n            \"reco_price\": 2000\n        },\n        {\n            \"p_id\": \"p3\",\n            \"product\": \"아이스크림\",\n            \"reco_price\": 1500\n        },\n        {\n            \"p_id\": \"p4\",\n            \"product\": \"에이드\",\n            \"reco_price\": 3000\n        },\n        {\n            \"p_id\": \"p5\",\n            \"product\": \"와플\",\n            \"reco_price\": 4000\n        },\n        {\n            \"p_id\": \"p6\",\n            \"product\": \"과일주스\",\n            \"reco_price\": 4000\n        },\n        {\n            \"p_id\": \"p7\",\n            \"product\": \"초콜릿\",\n            \"reco_price\": 1500\n        }\n    ],\n    \"result\": true\n}"
 				}
 			]
 		},
@@ -698,7 +716,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": "html",
+					"_postman_previewlanguage": "json",
 					"header": [
 						{
 							"key": "Server",
@@ -710,7 +728,10 @@
 						},
 						{
 							"key": "Content-Type",
-							"value": "text/html; charset=utf-8"
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
 						},
 						{
 							"key": "Content-Length",
@@ -730,7 +751,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\"result\": true}"
+					"body": "{\n    \"result\": true\n}"
 				}
 			]
 		}
