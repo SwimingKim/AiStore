@@ -311,7 +311,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": "html",
+					"_postman_previewlanguage": "json",
 					"header": [
 						{
 							"key": "Server",
@@ -323,7 +323,10 @@
 						},
 						{
 							"key": "Content-Type",
-							"value": "text/html; charset=utf-8"
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
 						},
 						{
 							"key": "Content-Length",
@@ -343,7 +346,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\"result\": true, \"data\": [{\"s_id\": \"s1\", \"name\": \"\\uc6a9\\uc0b0\\uc810\", \"locate\": \"\\uc6a9\\uc0b0\", \"products_num\": 6}, {\"s_id\": \"s2\", \"name\": \"\\uac15\\ub0a8\\uc810\", \"locate\": \"\\uac15\\ub0a8\", \"products_num\": 3}, {\"s_id\": \"s3\", \"name\": \"\\uac15\\ubd81\\uc810\", \"locate\": \"\\uac15\\ubd81\", \"products_num\": 4}, {\"s_id\": \"s4\", \"name\": \"cu\", \"locate\": \"seoul\", \"products_num\": 0}]}"
+					"body": "{\n    \"result\": true,\n    \"data\": [\n        {\n            \"s_id\": \"s1\",\n            \"name\": \"용산점\",\n            \"locate\": \"용산\",\n            \"products_num\": 6\n        },\n        {\n            \"s_id\": \"s2\",\n            \"name\": \"강남점\",\n            \"locate\": \"강남\",\n            \"products_num\": 3\n        },\n        {\n            \"s_id\": \"s3\",\n            \"name\": \"강북점\",\n            \"locate\": \"강북\",\n            \"products_num\": 4\n        },\n        {\n            \"s_id\": \"s4\",\n            \"name\": \"cu\",\n            \"locate\": \"seoul\",\n            \"products_num\": 0\n        }\n    ]\n}"
 				}
 			]
 		},

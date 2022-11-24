@@ -354,7 +354,35 @@ URL: {{BASE_URL}}/stores
 
 #### I. Example Response: success
 ```js
-{"result": true, "data": [{"s_id": "s1", "name": "\uc6a9\uc0b0\uc810", "locate": "\uc6a9\uc0b0", "products_num": 6}, {"s_id": "s2", "name": "\uac15\ub0a8\uc810", "locate": "\uac15\ub0a8", "products_num": 3}, {"s_id": "s3", "name": "\uac15\ubd81\uc810", "locate": "\uac15\ubd81", "products_num": 4}, {"s_id": "s4", "name": "cu", "locate": "seoul", "products_num": 0}]}
+{
+    "result": true,
+    "data": [
+        {
+            "s_id": "s1",
+            "name": "용산점",
+            "locate": "용산",
+            "products_num": 6
+        },
+        {
+            "s_id": "s2",
+            "name": "강남점",
+            "locate": "강남",
+            "products_num": 3
+        },
+        {
+            "s_id": "s3",
+            "name": "강북점",
+            "locate": "강북",
+            "products_num": 4
+        },
+        {
+            "s_id": "s4",
+            "name": "cu",
+            "locate": "seoul",
+            "products_num": 0
+        }
+    ]
+}
 ```
 
 
@@ -514,4 +542,4 @@ URL: {{BASE_URL}}/register
 ---
 [Back to top](#aiot-aistore)
 
->Generated at 2022-11-24 17:08:31 by [docgen](https://github.com/thedevsaddam/docgen)
+>Generated at 2022-11-24 17:10:44 by [docgen](https://github.com/thedevsaddam/docgen)
